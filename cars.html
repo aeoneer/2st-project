@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: url(./images/bg.jpg);
+      }
+      .car {
+        position: absolute;
+        width: 200px;
+        height: 150px;
+      }
+      .car1 {
+        background: url(./images/left_car1.png) no-repeat;
+        background-size: contain;
+        top: 750px;
+        right: -200px;
+        animation: movetl 3s linear infinite;
+      }
+      .car2 {
+        background: url(./images/left_car2.png) no-repeat;
+        background-size: contain;
+        top: 730px;
+        right: -200px;
+        animation: movetl 3s 1s linear infinite;
+      }
+      .car3 {
+        background: url(./images/left_car3.png) no-repeat;
+        background-size: contain;
+        top: 710px;
+        right: -200px;
+        animation: movetl 3s 1.3s linear infinite;
+      }
+
+      @keyframes movetl {
+        0% {
+          right: -200px;
+        }
+        100% {
+          right: 2120px;
+        }
+      }
+      .car4 {
+        background: url(./images/right_car1.png) no-repeat;
+        background-size: contain;
+        top: 750px;
+        left: -200px;
+        animation: movetr 3s linear infinite;
+      }
+      .car5 {
+        background: url(./images/right_car2.png) no-repeat;
+        background-size: contain;
+        top: 770px;
+        left: -200px;
+        animation: movetr 3s 1s linear infinite;
+      }
+      .car6 {
+        background: url(./images/right_car3.png) no-repeat;
+        background-size: contain;
+        top: 775px;
+        left: -200px;
+        animation: movetr 3s 1.3s linear infinite;
+      }
+      @keyframes movetr {
+        0% {
+          left: -200px;
+        }
+        100% {
+          left: 2120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left car car1"></div>
+    <div class="left car car2"></div>
+    <div class="left car car3"></div>
+    <div class="right car car4"></div>
+    <div class="right car car5"></div>
+    <div class="right car car6"></div>
+  </body>
+</html>
